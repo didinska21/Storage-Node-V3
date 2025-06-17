@@ -149,9 +149,7 @@ EOF
 ## ▶️ 11. Jalankan Node
 
 ```bash
-sudo systemctl daemon-reload
-sudo systemctl enable zgs
-sudo systemctl start zgs
+sudo systemctl daemon-reload && sudo systemctl enable zgs && sudo systemctl start zgs
 ```
 
 ---
