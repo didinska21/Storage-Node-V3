@@ -191,9 +191,9 @@ Node Anda sekarang sudah aktif dan siap digunakan di jaringan testnet 0G Labs.
 > 📬 Jika ada kendala, silakan hubungi komunitas atau pihak resmi 0G Labs untuk bantuan lebih lanjut.
 
 ## thanks to : 
-• Allah
-• AstroStake
-• BangCode
-• All 0G Labs Community
-• and All Team 0G Labs
+### Allah
+### AstroStake
+### BangCode
+### All 0G Labs Community
+### and All Team 0G Labs
 
