@@ -92,9 +92,7 @@ EOF
 
 # 11. Enable and start the service
 echo -e "\n>> Enabling and starting the service..."
-sudo systemctl daemon-reload
-sudo systemctl enable zgs
-sudo systemctl start zgs
+sudo systemctl daemon-reload && sudo systemctl enable zgs && sudo systemctl start zgs
 
 # 12. Check block & peers
 echo -e "\n>> Checking block & peers..."
