@@ -13,14 +13,6 @@ sleep 2
 
 echo -e "\n=== 0G Labs Storage Node Auto Installer ===\n"
 
-# 0. Start or create screen session
-if ! command -v screen &> /dev/null; then
-    echo "Installing screen..."
-    sudo apt-get install -y screen
-fi
-echo "Starting screen session 'storage'..."
-screen -dmS storage
-
 # 1. Update system
 echo -e "\n>> Updating system..."
 sudo apt-get update
@@ -98,4 +90,4 @@ sudo systemctl daemon-reload && sudo systemctl enable zgs && sudo systemctl star
 echo -e "\n>> Checking block & peers..."
 source <(curl -s https://raw.githubusercontent.com/astrostake/0G-Labs-script/refs/heads/main/storage-node/check_block.sh)
 
-echo -e "\n✅ Instalasi selesai! Gunakan 'screen -r storage' untuk masuk ke session."
+echo -e "\n✅ Instalasi selesai! Untuk cek log dan status node, cukup jalankan ulang script ini atau jalankan perintah di atas."
