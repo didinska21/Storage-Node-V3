@@ -68,14 +68,14 @@ fi
 # Step 4: Clone Repo
 echo -e "${YELLOW}📥 Mengunduh 0G Storage Node...${NC}"
 cd $HOME
-git clone -b v1.0.0 https://github.com/0glabs/0g-storage-node.git || error_exit "Gagal clone repo"
+git clone -b v1.1.0 https://github.com/0glabs/0g-storage-node.git || error_exit "Gagal clone repo"
 log "Repo berhasil di-clone."
 
 # Step 5: Setup & Build
 cd $HOME/0g-storage-node
 git stash
 git fetch --all --tags
-git checkout v1.0.0
+git checkout v1.1.0
 git submodule update --init
 cargo build --release || error_exit "Gagal compile dengan Cargo"
 log "Build selesai."
